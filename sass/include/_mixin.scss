@@ -1,0 +1,717 @@
+// clearfix
+
+
+// center(flex)
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// float none
+@mixin no-float {
+  float: none;
+  width: 100%;
+}
+
+//icon png(ie8) svg
+@mixin svg-icon($icon, $widit, $height) {
+  display: inline-block;
+  background-image: url("../images/#{$icon}.png");
+  background-image: none,
+  url("../images/#{$icon}.svg");
+  width: $width;
+  height: $height;
+}
+
+@mixin transition-color {
+  transition: color 0.5s ease-in-out;
+}
+
+
+
+@mixin clearul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin clearfloat {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+@mixin clearfix {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin transition {
+  transition: all 0.5s ease-in-out;
+
+}
+
+@mixin notransition {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+@mixin transition-color-bg {
+  -webkit-transition: color 0.5s ease-in-out, background-color 0.3s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out, background-color 0.3s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: color 0.5 ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.5s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+
+@mixin wrap {
+  margin: 0 auto;
+  max-width: $wrap-size;
+  text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @include wrap-width {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @include laptop-m {
+    width: 100%;
+  }
+
+  @include mobile-ll {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  &:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+@mixin inside-wrap-full {
+  margin: 0 ($wrap-size - 1920 - 40)/2;
+
+  @include wrap-width() {
+    margin: 0 -20px;
+  }
+}
+
+
+@mixin wrap-nopd {
+  margin: 0 auto;
+  max-width: $wrap-size;
+  width: 100%;
+  text-align: left;
+  padding-right: 0;
+  padding-left: 0;
+
+  @include wrap-width {
+    width: 100%;
+  }
+
+  &:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+
+
+$font-size_text-xs: 14px;
+$font-size_text-s: 15px;
+$font-size_text-m: 16px;
+$font-size_text-l: 17px; // $main-size
+$font-size_text-xl: 18px;
+
+$font-size_title-xxs: 20px;
+$font-size_title-xs: 24px;
+$font-size_title-s: 30px;
+$font-size_title-m: 35px;
+$font-size_title-l: 40px;
+$font-size_title-xl: 45px;
+
+$font-size_extra-xxs: 50px;
+$font-size_extra-xs: 60px;
+$font-size_extra-s: 80px;
+$font-size_extra-m: 90px;
+$font-size_extra-l: 100px;
+$font-size_extra-xl: 110px;
+$font-size_extra-xxl: 120px;
+
+
+
+
+@mixin font-size_text-xs {
+  font-size: $font-size_text-xs;
+}
+
+@mixin font-size_text-s {
+  font-size: $font-size_text-s;
+}
+
+@mixin footer-size {
+  font-size: $footer-size; //16px
+
+  @include tablet {
+    font-size: $footer-size - 1;
+  }
+}
+
+@mixin font-size_text-m {
+  //16px
+  font-size: $font-size_text-m;
+
+  @include tablet {
+    font-size: $font-size_text-m - 1;
+  }
+}
+
+
+@mixin main-size {
+  //16
+  font-size: $main-size;
+
+  @include mobile-xl {
+    font-size: $main-size - 1;
+  }
+
+}
+
+
+@mixin font-size_text-l {
+  //17
+  font-size: $font-size_text-l;
+
+  @include laptop-l {}
+
+  @include laptop {}
+
+  @include laptop-s {}
+
+  @include laptop-xs {}
+
+  @include tablet {
+    font-size: $font-size_text-l - 1;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_text-l - 2;
+  }
+
+  @include mobile-l {}
+}
+
+
+@mixin main-menu-size {
+  //18
+  font-size: $main-menu-size;
+
+  @include laptop-l {}
+
+  @include laptop {}
+
+  @include laptop-s {
+    font-size: $font-size_text-xl - 1;
+  }
+
+  @include laptop-xs {}
+
+  @include tablet {
+    line-height: 1.7em;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_text-xl - 2;
+  }
+
+  @include mobile-l {}
+}
+
+@mixin font-size_text-xl {
+  //18
+  font-size: $font-size_text-xl;
+
+  @include laptop-l {}
+
+  @include laptop {}
+
+  @include laptop-s {
+    font-size: $font-size_text-xl - 1;
+  }
+
+  @include laptop-xs {}
+
+  @include tablet {
+    line-height: 1.7em;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_text-xl - 2;
+  }
+
+  @include mobile-l {}
+}
+
+@mixin font-size_title-xxs {
+  //20
+  font-size: $font-size_title-xxs;
+  line-height: 1.5em;
+
+  @include laptop-l {}
+
+  @include laptop {}
+
+  @include laptop-s {}
+
+  @include laptop-xs {}
+
+  @include tablet {
+    font-size: $font-size_title-xxs - 1;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_title-xxs - 2;
+  }
+
+  @include mobile-l {}
+}
+
+@mixin font-size_title-xs {
+  //24
+  font-size: $font-size_title-xs;
+  line-height: 1.3em;
+
+  @include laptop-l {}
+
+  @include laptop {}
+
+  @include laptop-s {
+    font-size: $font-size_title-xs - 2;
+    line-height: 1.3em;
+  }
+
+  @include laptop-xs {}
+
+  @include tablet {
+    font-size: $font-size_title-xs - 4;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_title-xs - 5;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_title-xs - 6;
+  }
+}
+
+@mixin font-size_title-s {
+  //30
+  font-size: $font-size_title-s;
+  line-height: 1.4em;
+
+  @include laptop-l {}
+
+  @include laptop {
+    font-size: $font-size_title-s * .9;
+  }
+
+  @include laptop-s {
+    font-size: $font-size_title-s * .85;
+    line-height: 1.5em;
+  }
+
+  @include laptop-xs {}
+
+  @include tablet {
+    font-size: $font-size_title-s * .8;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_title-s * .75;
+    line-height: 1.4em;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_title-s * .7;
+  }
+}
+
+@mixin font-size_title-m {
+  //35
+  font-size: $font-size_title-m;
+  line-height: 1.3em;
+
+  @include laptop-l {
+    font-size: $font-size_title-m * .9;
+    line-height: 1.4em;
+  }
+
+  @include laptop {
+    font-size: $font-size_title-m * .85;
+  }
+
+  @include laptop-s {}
+
+  @include laptop-xs {
+    font-size: $font-size_title-m * .8;
+  }
+
+  @include tablet {}
+
+  @include mobile-xl {
+    font-size: $font-size_title-m * .7;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_title-m * .65;
+  }
+}
+
+@mixin font-size_title-l {
+  //40
+  font-size: $font-size_title-l;
+  line-height: 1.3em;
+
+  @include laptop-l {
+    font-size: $font-size_title-l * .9;
+  }
+
+  @include laptop {
+    font-size: $font-size_title-l * .85;
+  }
+
+  @include laptop-s {}
+
+  @include laptop-xs {
+    font-size: $font-size_title-l * .8;
+  }
+
+  @include tablet {}
+
+  @include mobile-xl {
+    font-size: $font-size_title-l * .65;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_title-l * .6;
+  }
+}
+
+@mixin font-size_title-xl {
+  //45
+  font-size: $font-size_title-xl;
+  line-height: 1.2em;
+
+  @include laptop-l {
+    font-size: $font-size_title-xl * .9;
+  }
+
+  @include laptop {
+    font-size: $font-size_title-xl * .8;
+  }
+
+  @include laptop-s {}
+
+  @include laptop-xs {
+    font-size: $font-size_title-xl * .75;
+  }
+
+  @include tablet {
+    font-size: $font-size_title-xl * .7;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_title-xl * .6;
+  }
+
+  @include mobile-l {}
+}
+
+@mixin font-size_extra-xxs {
+  //50
+  font-size: $font-size_extra-xxs;
+  line-height: 1.1em;
+
+  @include laptop-l {
+    font-size: $font-size_extra-xxs * .9;
+  }
+
+  @include laptop {
+    font-size: $font-size_extra-xxs * .8;
+    line-height: 1.2em;
+  }
+
+  @include laptop-s {}
+
+  @include laptop-xs {
+    font-size: $font-size_extra-xxs * .7;
+    line-height: 1.25em;
+  }
+
+  @include tablet {
+    font-size: $font-size_extra-xxs * .6;
+    line-height: 1.3em;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_extra-xxs * .55;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_extra-xxs * .5;
+  }
+}
+
+@mixin font-size_extra-xs {
+  //70
+  font-size: $font-size_extra-xs;
+  line-height: 1.1em;
+
+  @include laptop-l {
+    font-size: $font-size_extra-xs * .9;
+  }
+
+  @include laptop {
+    font-size: $font-size_extra-xs * .8;
+    line-height: 1.2em;
+  }
+
+  @include laptop-s {
+    font-size: $font-size_extra-xs * .75;
+  }
+
+  @include laptop-xs {
+    font-size: $font-size_extra-xs * .7;
+  }
+
+  @include tablet {
+    font-size: $font-size_extra-xs * .6;
+    line-height: 1.25em;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_extra-xs * .5;
+    line-height: 1.3em;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_extra-xs * .45;
+  }
+}
+
+@mixin font-size_extra-s {
+  //80
+  font-size: $font-size_extra-s;
+  line-height: 1.1em;
+
+  @include laptop-l {
+    font-size: $font-size_extra-s * .9;
+  }
+
+  @include laptop {
+    font-size: $font-size_extra-s * .8;
+    line-height: 1.15em;
+  }
+
+  @include laptop-s {
+    font-size: $font-size_extra-s * .75;
+    line-height: 1.2em;
+  }
+
+  @include laptop-xs {
+    font-size: $font-size_extra-s * .65;
+    line-height: 1.25em;
+  }
+
+  @include tablet {
+    font-size: $font-size_extra-s * .6;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_extra-s * .5;
+    line-height: 1.3em;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_extra-s * .4;
+  }
+}
+
+@mixin font-size_extra-m {
+  //90
+  font-size: $font-size_extra-m;
+  line-height: 1.1em;
+
+  @include laptop-l {
+    font-size: $font-size_extra-m * .9;
+  }
+
+  @include laptop {
+    font-size: $font-size_extra-m * .8;
+    line-height: 1.15em;
+  }
+
+  @include laptop-s {
+    font-size: $font-size_extra-m * .75;
+    line-height: 1.2em;
+  }
+
+  @include laptop-xs {
+    font-size: $font-size_extra-m * .65;
+    line-height: 1.25em;
+  }
+
+  @include tablet {
+    font-size: $font-size_extra-m * .6;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_extra-m * .5;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_extra-m * .38;
+    line-height: 1.3em;
+  }
+}
+
+@mixin font-size_extra-l {
+  //100
+  font-size: $font-size_extra-l;
+  line-height: 1.1em;
+
+  @include laptop-l {
+    font-size: $font-size_extra-l * .9;
+  }
+
+  @include laptop {
+    font-size: $font-size_extra-l * .8;
+  }
+
+  @include laptop-s {
+    font-size: $font-size_extra-l * .75;
+    line-height: 1.15em;
+  }
+
+  @include laptop-xs {
+    font-size: $font-size_extra-l * .65;
+    line-height: 1.2em;
+  }
+
+  @include tablet {
+    font-size: $font-size_extra-l * .6;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_extra-l * .5;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_extra-l * .35;
+  }
+}
+
+@mixin font-size_extra-xl {
+  //110
+  font-size: $font-size_extra-xl;
+  line-height: 1em;
+
+  @include laptop-l {
+    font-size: $font-size_extra-xl * .9;
+  }
+
+  @include laptop {
+    font-size: $font-size_extra-xl * .8;
+    line-height: 1.1em;
+  }
+
+  @include laptop-s {
+    font-size: $font-size_extra-xl * .75;
+    line-height: 1.15em;
+  }
+
+  @include laptop-xs {
+    font-size: $font-size_extra-xl * .65;
+    line-height: 1.2em;
+  }
+
+  @include tablet {
+    font-size: $font-size_extra-xl * .6;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_extra-xl * .5;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_extra-xl * .35;
+    line-height: 1.3em;
+  }
+}
+
+@mixin font-size_extra-xxl {
+  //120
+  font-size: $font-size_extra-xxl;
+  line-height: 1em;
+
+  @include laptop-l {
+    font-size: $font-size_extra-xxl * 0.9;
+  }
+
+  @include laptop {
+    font-size: $font-size_extra-xxl * 0.8;
+    line-height: 1.1em;
+  }
+
+  @include laptop-s {
+    font-size: $font-size_extra-xxl * 0.75;
+  }
+
+  @include laptop-xs {
+    font-size: $font-size_extra-xxl * 0.65;
+    line-height: 1.2em;
+  }
+
+  @include tablet {
+    font-size: $font-size_extra-xxl * 0.6;
+  }
+
+  @include mobile-xl {
+    font-size: $font-size_extra-xxl * 0.5;
+  }
+
+  @include mobile-l {
+    font-size: $font-size_extra-xxl * 0.35;
+  }
+}

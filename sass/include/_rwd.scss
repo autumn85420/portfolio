@@ -1,0 +1,288 @@
+$mq-mobile-xs-portrait : 375px !default; //375
+$mq-mobile-s-portrait : 450px !default; //450
+$mq-mobile-l-portrait : 480px !default; //480
+$mq-mobile-ll-portrait : 600px !default;
+$mq-mobile-xl-portrait : 767px !default;
+$mq-tablet : 991px !default; //991
+
+$mq-laptop-xs: 1023px !default;
+$mq-laptop-s : 1279px !default; //1024
+$mq-notebook : 1365px !default; //1280
+$mq-laptop : 1439px !default; //1366
+$mq-laptop-l : 1600px !default; 
+$mq-laptop-xl : 1900px !default;
+
+//min
+$mq-min-tablet : 768px !default;
+$mq-min-laptop-xs: 992px !default;
+
+//wrap
+$wrap-size: 1480px !default;
+
+
+@mixin custom-size($size) {
+	@media (max-width : $size) {
+		@content;
+	}
+}
+@mixin custom-min-size($size) {
+	@media (min-width : $size) {
+		@content;
+	}
+}
+
+@mixin mobile-xs { //375 - 320
+	@media (max-width : $mq-mobile-xs-portrait) {
+		@content;
+	}
+}
+
+@mixin mobile-s { //450
+	@media (max-width : $mq-mobile-s-portrait) {
+		@content;
+	}
+}
+
+@mixin mobile-l { //480 - 360
+	@media (max-width : $mq-mobile-l-portrait) {
+		@content;
+	}
+}
+
+@mixin mobile-ll{ //600 - 481
+	@media (max-width : $mq-mobile-ll-portrait) {
+		@content;
+	}
+}
+
+@mixin mobile-xl{ //767 - 681
+	@media (max-width : $mq-mobile-xl-portrait) {
+		@content;
+	}
+}
+ @mixin tablet-s{ //768
+ 	@media (max-width : $mq-tablet-portrait) {
+ 		@content;
+ 	}
+ }
+
+
+@mixin tablet{ //991 - 768
+	@media (max-width : $mq-tablet) {
+		@content;
+	}
+}
+
+
+@mixin laptop-xs{ //1279-1023
+	@media (max-width : $mq-laptop-xs) {
+		@content;
+	}
+}
+
+@mixin laptop-s{ //1279-1023
+	@media (max-width : $mq-laptop-s) {
+		@content;
+	}
+}
+@mixin laptop-m{ //1365 - 1280
+	@media (max-width : $mq-notebook) {
+		@content;
+	}
+}
+@mixin laptop { //1439-1366
+	@media (max-width : $mq-laptop) {
+		@content;
+	}
+}
+
+@mixin laptop-l { //1680 - 1440
+	@media (max-width : $mq-laptop-l) {
+		@content;
+	}
+}
+
+
+@mixin laptop-xl { //1900 -1681
+	@media (max-width : $mq-laptop-xl) {
+		@content;
+	}
+}
+
+@mixin wrap-width { //1900 -1681
+	@media (max-width : $wrap-size ) {
+		@content;
+	}
+}
+
+//min-width
+
+@mixin min-laptop-xs { //992
+	@media (min-width : $mq-min-laptop-xs) {
+		@content;
+	}
+}
+
+@mixin min-tablet { //768
+	@media (min-width : $mq-min-tablet) {
+		@content;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------- custom ---------------------------------------- //
+/*Desktop lg (min-width: 1200px) and (max-width: 1480px)*/
+$max-lg: 1480px !default;
+
+/*Desktop md (min-width: 992px) and (max-width: 1199px)*/
+$max-md: 1199px !default;
+
+$max-lt-md: 1023px !default;
+
+/*Tablet sm (min-width: 768px) and (max-width: 991px)*/
+$max-sm: 991px !default;
+
+/*Tablet xs (min-width: 601px) and (max-width: 767px)*/
+$max-xs: 767px !default;
+
+/*Tablet xs (min-width: 481px) and (max-width: 600px)*/
+$max-tb-xs: 600px !default;
+
+/*Mobile xxs (min-width: 320px) and (max-width: 480px)*/
+$max-xxs: 480px !default;
+
+$max-mb-xxs: 359px !default;
+
+// -------------------------------------------------------------------------------- //
+
+/*Desktop md ≥ 992 */
+$min-md: 992px !default;
+
+/*Desktop lg ≥ 1200 */
+$min-lg: 1200px !default;
+
+/*Desktop xl ≥ 1481 */
+$min-xl: 1481px !default;
+
+/*Desktop xxl ≥ 1921 */
+$min-xxl: 1921px !default;
+
+// -------------------------------------------------------------------------------- //
+
+@mixin max-lg {
+	@media (max-width: $max-lg) {
+		@content;
+	}
+}
+
+@mixin max-md {
+	@media (max-width: $max-md) {
+		@content;
+	}
+}
+
+@mixin max-lt-md {
+	@media (max-width: $max-lt-md) {
+		@content;
+	}
+}
+
+@mixin max-sm {
+	@media (max-width: $max-sm) {
+		@content;
+	}
+}
+
+@mixin max-xs {
+	@media (max-width: $max-xs) {
+		@content;
+	}
+}
+
+@mixin max-tb-xs {
+	@media (max-width: $max-tb-xs) {
+		@content;
+	}
+}
+
+@mixin max-xxs {
+	@media (max-width: $max-xxs) {
+		@content;
+	}
+}
+
+@mixin max-mb-xxs {
+	@media (max-width: $max-mb-xxs) {
+		@content;
+	}
+}
+
+// -------------------------------------------------------------------------------- //
+
+@mixin min-md {
+	@media (min-width: $min-md) {
+		@content;
+	}
+}
+
+@mixin min-lg {
+	@media (min-width: $min-lg) {
+		@content;
+	}
+}
+
+@mixin min-xl {
+	@media (min-width: $min-xl) {
+		@content;
+	}
+}
+
+@mixin min-xxl {
+	@media (min-width: $min-xxl) {
+		@content;
+	}
+}

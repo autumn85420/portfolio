@@ -1,0 +1,299 @@
+//logo
+
+:root {
+  --logo: 229px; // component/include/_header.scss 
+
+  --spacing-unit: 5px; //基本空間單位
+
+  --aside-width: 250px; //側選單 | component/include/_middle_layout.scss
+  --aside-margin: 250px; //側選單 | component/include/_middle_layout.scss
+
+  //.col 網格列表 | component/include/_card_item_article.scss
+  --col-padding: calc(3 * var(--spacing-unit)); //15px
+  --col-margin: calc(6 * var(--spacing-unit)); //30px
+
+  //選單高度與內容區距離  include/_normal.scss 
+  --header-height: 117px;
+
+
+  /* .b-article__title | component/include/_card_item_article.scss
+    .b-page__title  | component/include/_moddle_layout.scss
+    h1 | include/_normal.scss
+  */
+  --header-title: 48px;
+  --header-title-margin: calc(4 * var(--spacing-unit));
+  --header-title-padding: 0;
+  --header-title-line-height: 1;
+
+  /*.b-article__sub-title | component/include/_card_item_article.scss
+    .b-page__sub-title | component/include/_moddle_layout.scss
+    h2, .b-product-detailed__title, .b-location__name-header, .b-search-result__title | include/_normal.scss
+  */
+  --sub-header-title: 35px;
+  --sub-header-title-margin: calc(1 * var(--spacing-unit));
+  --sub-header-title-padding: 0;
+  --sub-header-title-line-height: 1.2;
+
+
+  /*.b-card__title, .b-card__title-link | component/include/_card_item_article.scss
+    h3, .b-add-inquiry-cart__title(modal add-inquiry-cart), .b-add-inquiry-cart__product-name | include/_normal.scss
+    alreat(登入後 錯誤 , 成功) 文字 | include/_normal.scss
+  */
+  --title: 22px;
+  --title-margin: calc(2 * var(--spacing-unit));
+  --title-line-height: 1.2;
+
+
+  /*.b-card__sub-title, .b-card__sub-title-link | component/include/_card_item_article.scss
+    h4, .b-product-intro__title | include/_normal.scss
+  */
+  --sub-title: 18px;
+  --sub-title-margin: calc(1 * var(--spacing-unit));
+  --sub-title-padding: calc(1 * var(--spacing-unit));
+  --sub-title-line-height: 1.3;
+
+  /*
+    .b-page__sub-title | component/include/_moddle_layout.scss
+  */
+  --b-aside-title: 25px; //側選單標題
+  --b-aside-padding: calc(2 * var(--spacing-unit));
+  --b-aside-margin: calc(2 * var(--spacing-unit));
+
+  //header 主選單 | component/include/_header.scss
+  --b-main-menu__link-margin-tb: 0;
+  --b-main-menu__link-margin-lr: 0;
+  --b-main-menu__link-padding-tb: calc(2 * var(--spacing-unit));
+  --b-main-menu__link-padding-lr: calc(4 * var(--spacing-unit));
+
+  //共用 dropdown-menu | component/include/_header.scss
+  --b-dropdown-menu-padding-tb: calc(2 * var(--spacing-unit));
+  --b-dropdown-menu-padding-lr: calc(2 * var(--spacing-unit));
+  --b-dropdown-menu-radius: 0px;
+
+  //header 次選單 | component/include/_header.scss
+  --b-sub-main-menu__link-margin-tb: calc(3 * var(--spacing-unit));
+  --b-sub-main-menu__link-margin-lr: calc(3 * var(--spacing-unit));
+  --b-sub-main-menu__link-padding-tb: calc(3 * var(--spacing-unit));
+  --b-sub-main-menu__link-padding-lr: calc(2 * var(--spacing-unit));
+
+  //b-header__top 選單 | component/include/_header.scss
+  --b-topnav__link-padding-tb: calc(2 * var(--spacing-unit));
+  --b-topnav__link-padding-lr: calc(3 * var(--spacing-unit));
+
+  // b-btn | component/include/_btn.scss
+  --btn__padding-tb: var(--spacing-unit);
+  --btn__padding-lr: calc(5* var(--spacing-unit));
+  --btn__size: 16px;
+  --btn__radius: 0px;
+
+  // btn-lg  | component/include/_btn.scss
+  --btn-lg__padding-tb: calc(1.5* var(--spacing-unit));
+  --btn-lg__padding-lr: calc(8* var(--spacing-unit));
+  --btn-lg__size: 20px;
+  --btn-lg__radius: 0px;
+
+  // btn-sm  | component/include/_btn.scss
+  --btn-sm__padding-tb: var(--spacing-unit);
+  --btn-sm__padding-lr: calc(2* var(--spacing-unit));
+  --btn-sm__size: 14px;
+  --btn-sm__radius: 0px;
+
+  /*input | component/include/_form.scss 
+    驗證碼 | /include/_normal.scss 
+ */
+  --input-height: 45px;
+  --input-padding-tb: 10px;
+  --input-padding-lr: 15px;
+  --input-radius: 0px;
+
+  //form__inline-style | component/include/_form.scss 
+  --inline-label-width: 150px;
+
+}
+
+@include laptop-l {
+  //1600px
+}
+
+@include laptop-m {
+
+  //1365px
+  :root {
+    --logo: 180px;
+    --title: 25px;
+  }
+}
+
+@include laptop-s {
+
+  //1279px
+  :root {
+    --logo: 150px;
+    --header-title: 40px;
+    --sub-header-title: 28px;
+
+    --b-topnav__link-margin-lr: calc(2 * var(--spacing-unit));
+    --b-topnav__link-padding-tb: calc(2 * var(--spacing-unit));
+    --b-topnav__link-padding-lr: calc(2 * var(--spacing-unit));
+
+    --b-main-menu__link-margin-tb: calc(3 * var(--spacing-unit));
+    --b-main-menu__link-padding-tb: calc(2 * var(--spacing-unit));
+    --b-main-menu__link-padding-lr: calc(2 * var(--spacing-unit));
+
+
+    --b-sub-main-menu__link-padding-tb: calc(2 * var(--spacing-unit));
+    --b-sub-main-menu__link-padding-lr: calc(2 * var(--spacing-unit));
+  }
+
+}
+
+@include laptop-xs {
+
+  //1023px
+  :root {
+    --header-title: 35px;
+    --sub-header-title: 22px;
+    --sub-title: 20px;
+    --p: 16px;
+
+
+  }
+}
+
+@include tablet {
+
+  //991px
+  :root {
+    --header-height: 63px;
+    --header-title: 30px;
+    --sub-title: 22px;
+    --aside-width: 100%;
+    --main-width: 100%;
+    --b-sub-main-menu__link-padding-tb: calc(2 * var(--spacing-unit));
+    --b-sub-main-menu__link-padding-lr: calc(2 * var(--spacing-unit));
+
+  }
+
+}
+
+@include mobile-xl {
+
+  //767px
+  :root {
+    --title: 22px;
+    --sub-title: 20px;
+    --header-title-margin: calc(3 * var(--spacing-unit));
+  }
+
+}
+
+@include mobile-l {
+
+  //600px
+  :root {
+    --header-title: 28px;
+    --title: 20px;
+    --sub-title: 18px;
+    --inline-label-width: 100%;
+
+  }
+
+}
+
+@include mobile-xs {
+
+  //375px
+  :root {
+    --title: 20px;
+    --sub-title: 17px;
+    --header-title-margin: calc(2.5 * var(--spacing-unit));
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------- custom ---------------------------------------- //
+:root {
+  --header-height: 128px; // header 高
+  --logo-height: 66px; // logo(229*66)
+  --inverse-spacing: calc(50vw - 740px); //反比間距(1480↑)
+}
+
+@include max-lg {
+  :root {
+    --header-height: 106px;
+    --logo-height: 60px;
+    --inverse-spacing: 20px;
+  }
+}
+
+@include max-md {
+  :root {
+    --header-height: 84px;
+    --logo-height: 55px;
+  }
+}
+
+@include max-sm {
+  :root {
+    --header-height: 60px;
+    --logo-height: 40px;
+  }
+}
+
+@include max-xs {}
+
+@include max-tb-xs {
+  :root {
+    --inverse-spacing: 20px;
+  }
+}
+
+@include max-xxs {
+  :root {
+    --logo-height: 40px;
+  }
+}
