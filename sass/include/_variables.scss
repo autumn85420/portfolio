@@ -15,14 +15,14 @@ $info: #777777;
 $warning: #FFCB3B;
 $danger: #F87F8B;
 
-$base:#292828; // 自行使用, 目前沒有定義
+$base: #292828; // 自行使用, 目前沒有定義
 $light: #f5f5f5; //.bg-light, .text-light, 使用於 .non-result-wrap .b-page_nodata | component/include/_text_bg_aleart.scss
 $dark: #5a5a5a; //.text-light, .text-dark, 使用於 .non-result-wrap .b-page_nodata | component/include/_text_bg_aleart.scss
 
 
 //全站內文配色與文字尺寸
-$main-size: 16px; // Rwd 於 include/_mixin.scss 調整
-$main-color:#000; //body all font-color
+$main-size: 17px; // Rwd 於 include/_mixin.scss 調整
+$main-color: #000; //body all font-color
 
 
 //全站內文連結
@@ -51,27 +51,27 @@ $mobile-submenu-openmenu-color: #969696;
 
 
 //線條
-$line-light:#e5e5e5; // 使用於 _normal.scss ,產品詢價外跳樣式 、比較表
+$line-light: #e5e5e5; // 使用於 _normal.scss ,產品詢價外跳樣式 、比較表
 $line-dark: #626262; //目前沒有引用
 
 
 //topnav 文字大小與配色
-$topnav-size:15px;
-$topnav-link:#DC000C;
-$topnav-hover:#DC000C;
+$topnav-size: 15px;
+$topnav-link: #DC000C;
+$topnav-hover: #DC000C;
 
 
 //main-menu 文字大小與配色
-$main-menu-size:18px; // 引用 include/_mixin.scss 寫了rwd
-$main-menu-link:#333;
-$main-menu-hover:#DC000C;
+$main-menu-size: 18px; // 引用 include/_mixin.scss 寫了rwd
+$main-menu-link: #333;
+$main-menu-hover: #DC000C;
 
 
 //主選單下拉選單  引用 component/include/_header.scss
 /*目前隱藏 有需要請到 上面路徑打開  打開註解 */
-$main-menu-dropdown-menu-bg:#ffffff;
-$main-menu-dropdown-menu-link:#050505;
-$main-menu-dropdown-menu-hover:#525253;
+$main-menu-dropdown-menu-bg: #ffffff;
+$main-menu-dropdown-menu-link: #050505;
+$main-menu-dropdown-menu-hover: #525253;
 
 
 /*共用下拉選單*/
@@ -80,34 +80,34 @@ $dropdown-menu-color: $main-color;
 $dropdown-menu-color-hover: $primary;
 $dropdown-menu-bg: #fff; // 引用於
 $dropdown-menu-bg-hover: #f8f8f8; // 引用於
-$dropdown-menu-border-color:#ccc;
+$dropdown-menu-border-color: #ccc;
 
 
 //sub-main-menu 文字大小與配色
-$sub-main-menu-size:16px;
-$sub-main-menu-link:#5B586E;
+$sub-main-menu-size: 16px;
+$sub-main-menu-link: #5B586E;
 $sub-main-menu-hover: #DC000C;
 
 
 //會員選單 文字大小與配色
 //component/include/_header.scss  header 會員
 /*目前共用 dropdown-menu 到 上方路徑打開 打開註解*/
-$member-menu-size:16px;
-$member-menu-link:#616161;
+$member-menu-size: 16px;
+$member-menu-link: #616161;
 $member-menu-hover: #252525;
 
 
 //lang 語系 component/include/_header.scss
 /*目前共用 dropdown-menu 到 上方路徑打開 打開註解*/
-$lang-menu-size:16px;
-$lang-menu-link:#616161;
+$lang-menu-size: 16px;
+$lang-menu-link: #616161;
 $lang-menu-hover: #252525;
 
 
 /*.b-article__title-link, .b-page__title | component/include/_card_item_article.scss
   .b-page__title | component/include/_moddle_layout.scss
 */
-$header-color:#333; // 主標題
+$header-color: #333; // 主標題
 
 
 /*.b-article__sub-title | component/include/_card_item_article.scss
@@ -128,24 +128,24 @@ $sub-title-color-hover: $primary; //card ,次標題
 
 
 //側選單 .b-aside | component/include/_moddle_layout.scss
-$aside-menu-size:17px; //側選單大小
+$aside-menu-size: 17px; //側選單大小
 $aside-header-color: #333; //側選單標題
-$aside-menu-link:#3d3d3d; //側選單連結
-$aside-menu-hover:#DC000C; //側選單hover
+$aside-menu-link: #3d3d3d; //側選單連結
+$aside-menu-hover: #DC000C; //側選單hover
 
 
 //整站分頁 | include/_normal.scss
 $pagination-size: 15px;
-$pagination-link-color:#666;
-$pagination-link-bg:#fff;
-$pagination-hover-color:#fff;
+$pagination-link-color: #666;
+$pagination-link-bg: #fff;
+$pagination-hover-color: #fff;
 $pagination-hover-bg: $primary;
-$pagination-disabled-color:#d4d4d4;
-$pagination-disabled-bg:#fff;
+$pagination-disabled-color: #d4d4d4;
+$pagination-disabled-bg: #fff;
 
 
 //整站more | component/include/_btn.scss
-$btn-more-link-size:var(--btn__size);
+$btn-more-link-size: var(--btn__size);
 $btn-more-link-color: #DC000C;
 $btn-more-hover-color: #DC000C;
 $btn-more-disabled-color: #D2CDDB;
@@ -153,7 +153,7 @@ $btn-more-disabled-color: #D2CDDB;
 
 //search btn | component/include/_btn.scss
 $btn-search-link-color: #333;
-$btn-search-hover-color:#DC000C;
+$btn-search-hover-color: #DC000C;
 
 
 //component/include/_btn.scss
@@ -192,8 +192,8 @@ $btn-back-hover-color: $primary;
 
 //預設隱藏 若有需要請於_btn.scss '.b-btn-submit ' 打開註解 | include/_nornal.scss
 $btn-submit-link-color: #2D2D2D;
-$btn-submit-hover-color:#576574;
-$btn-submit-disabled-color:#C3CBD4;
+$btn-submit-hover-color: #576574;
+$btn-submit-disabled-color: #C3CBD4;
 
 
 //詢價列表 Cart, table | include/_nornal.scss
@@ -202,38 +202,38 @@ $table-td-line-color: $default;
 $table-td-color: lighten($main-color, 15%);
 $table-responsive-header-size: 16px;
 $table-responsive-header-color: $main-color;
-$table-hover-bg:#f5f5f5;
+$table-hover-bg: #f5f5f5;
 
 
 //詢價車樣式 table | include/_nornal.scss
 $cart-product-model-size: 15px;
 $cart-product-model-color: #666;
 $cart-product-name-size: 18px;
-$cart-product-name-color:#333;
+$cart-product-name-color: #333;
 
 
 //alert樣式
-$alert-border-radius:0;
-$alert-border-width:1px;
+$alert-border-radius: 0;
+$alert-border-width: 1px;
 
 
 //表單樣式 form | include/_form.scss
-$input-color:$default;
+$input-color: $default;
 $input-focus-color: darken($default, 10%);
-$input-placeholder:rgb(219, 219, 219);
+$input-placeholder: rgb(219, 219, 219);
 
 
 //footer | component/include/_footer.scss
-$footer-size:16px; // Rwd 於 _mixin.scss 調整
-$footer-bg:#f0f0f0;
-$footer-bottom-bg:#fff;
-$footer-color:#666;
+$footer-size: 16px; // Rwd 於 _mixin.scss 調整
+$footer-bg: #f0f0f0;
+$footer-bottom-bg: #fff;
+$footer-color: #666;
 $footer-hover-color: #000;
 $footer-line-color: #ccc;
 $footer-link-color: #666;
-$footer-submenu-link-color:#666;
-$footer-submenu-hover-color:#000;
+$footer-submenu-link-color: #666;
+$footer-submenu-hover-color: #000;
 
 
 //字體樣式 | include/_normal.scss
-$default-font-family: 'Roboto',"微軟正黑體","Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4,"微软雅黑",'Arial',sans-serif;
+$default-font-family: 'Roboto', "微軟正黑體", "Microsoft JhengHei", \5FAE\8EDF\6B63\9ED1\9AD4, "微软雅黑", 'Arial', sans-serif;

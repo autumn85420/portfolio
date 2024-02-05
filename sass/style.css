@@ -1,0 +1,99 @@
+/*
+Error: wrong number of arguments (1 for 3) for `rgb'
+        on line 1072 of C:\Users\USER\OneDrive\桌面\xd\作品集\portfolio\02\sass\style.scss
+
+1067:             color: #000;
+1068:             opacity: 0;
+1069:             transition: all 0.3s ease-out;
+1070: 
+1071:             &:after {
+1072:                 background: rgb(255 255 255 / 80%);
+1073:                 width: 80px;
+1074:                 height: 80px;
+1075:                 position: absolute;
+1076:                 content: "";
+1077:                 top: 50%;
+
+Backtrace:
+C:\Users\USER\OneDrive\桌面\xd\作品集\portfolio\02\sass\style.scss:1072
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:311:in `reformat_argument_error'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:158:in `rescue in _perform'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:127:in `_perform'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/bin/sass:23:in `load'
+C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 1072 of C:\Users\USER\OneDrive\桌面\xd\作品集\portfolio\02\sass\style.scss\A \A 1067:             color: #000;\A 1068:             opacity: 0;\A 1069:             transition: all 0.3s ease-out;\A 1070: \A 1071:             &:after {\A 1072:                 background: rgb(255 255 255 / 80%);\A 1073:                 width: 80px;\A 1074:                 height: 80px;\A 1075:                 position: absolute;\A 1076:                 content: \"\";\A 1077:                 top: 50%;"; }
