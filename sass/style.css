@@ -1,21 +1,21 @@
 /*
 Error: wrong number of arguments (1 for 3) for `rgb'
-        on line 1228 of C:\Users\USER\OneDrive\桌面\xd\作品集\portfolio\02\sass\style.scss
+        on line 1239 of C:\Users\USER\OneDrive\桌面\xd\作品集\portfolio\02\sass\style.scss
 
-1223:             color: #000;
-1224:             opacity: 0;
-1225:             transition: all 0.3s ease-out;
-1226: 
-1227:             &:after {
-1228:                 background: rgb(255 255 255 / 80%);
-1229:                 width: 80px;
-1230:                 height: 80px;
-1231:                 position: absolute;
-1232:                 content: "";
-1233:                 top: 50%;
+1234:             color: #000;
+1235:             opacity: 0;
+1236:             transition: all 0.3s ease-out;
+1237: 
+1238:             &:after {
+1239:                 background: rgb(255 255 255 / 80%);
+1240:                 width: 80px;
+1241:                 height: 80px;
+1242:                 position: absolute;
+1243:                 content: "";
+1244:                 top: 50%;
 
 Backtrace:
-C:\Users\USER\OneDrive\桌面\xd\作品集\portfolio\02\sass\style.scss:1228
+C:\Users\USER\OneDrive\桌面\xd\作品集\portfolio\02\sass\style.scss:1239
 C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:311:in `reformat_argument_error'
 C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:158:in `rescue in _perform'
 C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:127:in `_perform'
@@ -96,4 +96,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver 2021/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 1228 of C:\Users\USER\OneDrive\桌面\xd\作品集\portfolio\02\sass\style.scss\A \A 1223:             color: #000;\A 1224:             opacity: 0;\A 1225:             transition: all 0.3s ease-out;\A 1226: \A 1227:             &:after {\A 1228:                 background: rgb(255 255 255 / 80%);\A 1229:                 width: 80px;\A 1230:                 height: 80px;\A 1231:                 position: absolute;\A 1232:                 content: \"\";\A 1233:                 top: 50%;"; }
+  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 1239 of C:\Users\USER\OneDrive\桌面\xd\作品集\portfolio\02\sass\style.scss\A \A 1234:             color: #000;\A 1235:             opacity: 0;\A 1236:             transition: all 0.3s ease-out;\A 1237: \A 1238:             &:after {\A 1239:                 background: rgb(255 255 255 / 80%);\A 1240:                 width: 80px;\A 1241:                 height: 80px;\A 1242:                 position: absolute;\A 1243:                 content: \"\";\A 1244:                 top: 50%;"; }

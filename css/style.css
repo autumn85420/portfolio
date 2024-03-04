@@ -1388,6 +1388,13 @@ h1 {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+@media (max-width: 991px) {
+  .pro-tab .card .card-txt {
+    padding: 15px;
+    bottom: 10px;
+    left: 10px;
+  }
+}
 .pro-tab .card .card-txt:after {
   content: "";
   width: 100%;
@@ -1409,6 +1416,12 @@ h1 {
 .pro-tab .card .card-txt h3 {
   font-size: 25px;
   margin-top: 0;
+}
+@media (max-width: 1279px) {
+  .pro-tab .card .card-txt h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
 }
 .pro-tab .card .card-img {
   position: relative;
@@ -1470,6 +1483,12 @@ h1 {
 .pro-tab .card:hover .btn-more::after {
   -webkit-box-shadow: 0 0 1px 15px rgba(255, 255, 255, 0.4), 0 0 1px 30px rgba(255, 255, 255, 0.1), 0 0 1px 45px rgba(186, 186, 186, 0.1);
           box-shadow: 0 0 1px 15px rgba(255, 255, 255, 0.4), 0 0 1px 30px rgba(255, 255, 255, 0.1), 0 0 1px 45px rgba(186, 186, 186, 0.1);
+}
+@media (max-width: 991px) {
+  .pro-tab .card:hover .btn-more::after {
+    -webkit-box-shadow: 0 0 1px 15px rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 1px 15px rgba(255, 255, 255, 0.4);
+  }
 }
 
 /*作品內頁*/
