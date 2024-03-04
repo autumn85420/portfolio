@@ -206,7 +206,7 @@ a* {
 #container {
     position: relative;
     overflow: hidden;
-
+    background: #fff;
     min-height: auto !important;
 
 
@@ -326,7 +326,12 @@ a* {
     padding: 2px 0px 0 0px;
     width: 80px;
     -webkit-transition: none;
-    transition: none
+
+    transition: none;
+
+    @media(max-width: 600px) {
+        width: 50px;
+    }
 }
 
 
@@ -398,9 +403,7 @@ a* {
     ul {
         margin: 50px auto;
 
-        @media(max-width: 1340px) {
-            margin: 45px 0px 0 0;
-        }
+
 
         @media(max-width: 991px) {
             display: none;
@@ -428,7 +431,6 @@ a* {
 
 @media(max-width: 1399px) {
     #navbar ul>li>a {
-        font-size: 20px;
         padding: 8px 18px;
     }
 }
@@ -670,6 +672,10 @@ a* {
 
     transition: all .3s ease-out;
 
+    @include tablet {
+        right: -11px;
+    }
+
     .fo-info {
         font-size: 15px;
     }
@@ -737,10 +743,30 @@ a* {
     margin-top: 5%;
     text-align: left;
     background: #F5F5F5;
+
+    @include tablet {
+        background: transparent;
+        padding: 3% 0 10px;
+        margin-top: 0;
+    }
 }
 
 .fo-info {
     font-size: 15px;
+
+    @include tablet {
+        &:before {
+            content: "";
+            position: absolute;
+            background: #f5f5f5;
+            width: 100vw;
+            left: 0;
+            right: 0;
+            height: 40px;
+            z-index: -1;
+            bottom: 0;
+        }
+    }
 }
 
 .contact-group {
@@ -748,15 +774,36 @@ a* {
     right: 0;
     bottom: 20px;
     background: #ddd;
-    padding: 50px 5% 50px 50px;
+    padding: 3% 5%;
     display: flex;
-    width: calc(100%/2 - 10%);
+    width: calc(100%/2 - 5%);
     justify-content: space-around;
     align-items: center;
+
+    @include laptop {
+        width: auto;
+    }
+
+    @include tablet {
+        position: inherit;
+        margin-bottom: 20px;
+    }
+
+    @include custom-size(700px) {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px 30px;
+    }
 
     .contact-txt {
         padding-right: 5%;
         text-align: left;
+        flex: 2;
+        white-space: nowrap;
+
+        @include custom-size(700px) {
+            white-space: normal;
+        }
 
         b {
             margin-bottom: 5px;
@@ -765,7 +812,13 @@ a* {
     }
 
     .contact-img {
-        width: 30%;
+        width: 181px;
+        flex: auto;
+        white-space: nowrap;
+
+        @include tablet {
+            flex: 0;
+        }
     }
 
     .con-btn {
@@ -773,6 +826,13 @@ a* {
         color: #fff;
         padding: 15px 50px;
         border-radius: 25px;
+
+        @include custom-size(700px) {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            text-align: center;
+        }
 
         img {
             padding-left: 10px;
@@ -797,9 +857,25 @@ a* {
     display: flex;
     flex-wrap: wrap;
 
+    @include custom-size(1200px) {
+        flex-direction: column;
+    }
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    @include mobile-ll {
+        flex-direction: column;
+    }
+
     p {
         width: 80%;
         margin-bottom: 3%;
+
+        @include tablet {
+            width: 100%;
+        }
     }
 }
 
@@ -807,6 +883,18 @@ a* {
     position: relative;
     width: 50%;
     padding-bottom: 20px;
+
+    @include custom-size(1200px) {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 50%;
+    }
+
+    @include mobile-ll {
+        width: 100%;
+    }
 
     &:after {
         position: absolute;
@@ -817,6 +905,15 @@ a* {
         top: -20px;
         height: 70%;
         z-index: -1;
+
+        @include custom-size(1700px) {
+            width: 50vw;
+            left: -50px;
+        }
+
+        @include tablet {
+            width: 100vw;
+        }
     }
 
     .card-name {
@@ -833,6 +930,14 @@ a* {
     .card-photo {
         text-align: center;
 
+        @include tablet {
+            text-align: left;
+        }
+
+        @include mobile-ll {
+            text-align: center;
+        }
+
         img {
             border-radius: 50%;
         }
@@ -843,6 +948,19 @@ a* {
 .interest-group {
     width: 50%;
     padding: 3% 0;
+
+    @include custom-size(1200px) {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 50%;
+    }
+
+    @include mobile-ll {
+        width: 100%;
+        padding: 0;
+    }
 
     ul {
         display: flex;
@@ -882,6 +1000,10 @@ a* {
     li {
         span {
             padding-right: 20px;
+
+            @include mobile-ll {
+                display: block;
+            }
         }
 
         &:after {
@@ -892,6 +1014,11 @@ a* {
             position: absolute;
             left: -17px;
             top: -23px;
+
+            @include mobile-ll {
+                height: 53px;
+                top: -46px;
+            }
         }
 
         &:first-child::after {
@@ -903,22 +1030,34 @@ a* {
 .skill {
     display: flex;
     margin: 0 -20px;
+    flex-wrap: wrap;
 
     .card {
         text-align: center;
         padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        @include custom-size(1450px) {
+            width: 33.3%;
+        }
+
+        @include mobile-s {
+            width: 50%;
+        }
+
+        p {
+            white-space: nowrap;
+        }
+
+        img {
+            min-width: 51px;
+        }
     }
 }
 
-.skill {
-    display: flex;
-    margin: 0 -20px;
 
-    .card {
-        text-align: center;
-        padding: 10px 20px;
-    }
-}
 
 .list-c {
     padding-left: 25px;
@@ -948,12 +1087,20 @@ a* {
     padding: 3vw 20px;
     line-height: 1.8;
     background: #F5F5F5;
+
+    @include tablet {
+        padding: 20px;
+    }
 }
 
 h1 {
     font-size: 28px;
     text-align: center;
     margin: 30px 0 20px;
+
+    @include tablet {
+        font-size: 22px;
+    }
 }
 
 .por-list .nav-tabs {
@@ -997,6 +1144,15 @@ h1 {
         width: 33.3%;
         padding: 15px;
         position: relative;
+
+        @include tablet {
+            width: 50%;
+            padding: 5px;
+        }
+
+        @include mobile-s {
+            width: 100%;
+        }
 
         >a {
             position: absolute;
@@ -1147,12 +1303,23 @@ h1 {
 .info-color {
     display: flex;
     flex-wrap: wrap;
+
+    @include tablet {
+        max-width: 80%;
+    }
+
+    @include mobile-ll {
+        max-width: 100%;
+    }
 }
 
 
 .color-card {
     width: 25%;
     padding: 5px;
+
+
+
 
     span {
         padding-bottom: 100%;
@@ -1164,14 +1331,24 @@ h1 {
 .gallery-item {
     margin: 5% 0px 30px;
 
+    .col-md-3 {
+        @include tablet {
+            text-align: center;
+        }
+    }
+
     img {
         box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
         margin-bottom: 5%;
         background: #FFF;
+
+        @include tablet {
+            box-shadow: none;
+        }
     }
 
     .circle-img {
-        border-radius: 25px;
+        border-radius: 3%;
     }
 }
 
@@ -1227,6 +1404,10 @@ h1 {
     position: relative;
     padding: 5%;
 
+    @include tablet {
+        flex-direction: column-reverse;
+    }
+
     &:after {
         content: "";
         position: absolute;
@@ -1237,14 +1418,35 @@ h1 {
         height: 55%;
         z-index: -1;
         min-height: 200px;
+
+        @include custom-size(1700px) {
+
+            left: -50px;
+        }
+
+        @include tablet {
+            left: -30px;
+            right: -50px;
+        }
+
+
+
     }
 
     .info {
         width: 50%;
+
+        @include tablet {
+            width: 100%;
+        }
     }
 
     .mail-form {
         width: 50%;
+
+        @include tablet {
+            width: 100%;
+        }
 
         iframe {
             box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.12);
@@ -1253,6 +1455,10 @@ h1 {
 
     .info {
         padding: 20px 20px 20px 50px;
+
+        @include tablet {
+            padding: 0;
+        }
 
         .info-group {
             padding-left: 80px;
