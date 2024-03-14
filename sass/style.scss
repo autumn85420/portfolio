@@ -1412,6 +1412,43 @@ h1 {
     }
 }
 
+
+//主視覺頁
+.white-bg {
+    .row {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-md-6 {
+        text-align: center;
+        position: relative;
+
+        &:first-child::before {
+            content: "";
+            background: url(../images/picture/arrow.svg);
+            width: 107px;
+            height: 14px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            right: -30px;
+
+            @include tablet {}
+        }
+    }
+
+    img {
+        background: #fff;
+        padding: 10px;
+        box-shadow: 5px 2px 15px rgba(0, 0, 0, .10);
+    }
+
+}
+
 //聯絡我
 
 
