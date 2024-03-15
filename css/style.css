@@ -1674,6 +1674,7 @@ h1 {
           transform: translateY(-50%);
   position: absolute;
   right: -30px;
+  z-index: 3;
 }
 .white-bg img {
   background: #fff;
