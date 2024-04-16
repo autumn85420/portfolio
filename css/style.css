@@ -1394,6 +1394,7 @@ h1 {
     padding: 15px;
     bottom: 10px;
     left: 10px;
+    opacity: 1;
   }
 }
 .pro-tab .card .card-txt:after {
@@ -1409,6 +1410,11 @@ h1 {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   z-index: -1;
+}
+@media (max-width: 991px) {
+  .pro-tab .card .card-txt:after {
+    height: 100%;
+  }
 }
 .pro-tab .card .card-txt span {
   font-size: 15px;
@@ -1439,6 +1445,11 @@ h1 {
   transition: all 0.3s ease-out;
   opacity: 0;
 }
+@media (max-width: 991px) {
+  .pro-tab .card .card-img:after {
+    opacity: 0;
+  }
+}
 .pro-tab .card .btn-more {
   position: absolute;
   top: 50%;
@@ -1450,6 +1461,11 @@ h1 {
   opacity: 0;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+@media (max-width: 991px) {
+  .pro-tab .card .btn-more {
+    opacity: 1;
+  }
 }
 .pro-tab .card .btn-more:after {
   background: rgba(255, 255, 255, 0.8);
@@ -1514,6 +1530,30 @@ h1 {
   }
 }
 
+/*重疊*/
+.overlap-group .gallery-item .col-md-6:nth-child(2) {
+  top: 50px;
+}
+@media (max-width: 991px) {
+  .overlap-group .gallery-item .col-md-6:nth-child(2) {
+    top: 15px;
+  }
+}
+
+.overlap-item {
+  position: relative;
+}
+
+.overlap-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+}
+
 /*作品內頁*/
 .pro-info {
   border: 1px solid #c8c8c8;
@@ -1576,6 +1616,11 @@ h1 {
 
 .gallery-item {
   margin: 5% 0px 30px;
+}
+@media (max-width: 991px) {
+  .gallery-item {
+    margin: 20px 0;
+  }
 }
 @media (max-width: 991px) {
   .gallery-item .col-md-3 {
