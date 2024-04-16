@@ -1281,6 +1281,18 @@ h1 {
     }
 }
 
+/*平面*/
+.side-item {
+    display: flex;
+    margin: 5% 0px 30px;
+    justify-content: center;
+
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+
 /*作品內頁*/
 .pro-info {
     border: 1px solid #c8c8c8;
